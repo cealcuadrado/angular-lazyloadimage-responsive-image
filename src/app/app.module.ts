@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+
 import { AppComponent } from './app.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LayoutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
